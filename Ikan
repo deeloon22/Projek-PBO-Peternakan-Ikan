@@ -1,0 +1,48 @@
+public class Ikan {
+    protected String idIkan;
+    protected String namaIkan;
+    protected int jumlahIkan;
+
+    public Ikan(String idIkan, String namaIkan, int jumlahIkan) {
+        this.idIkan = idIkan;
+        this.namaIkan = namaIkan;
+        this.jumlahIkan = jumlahIkan;
+    }
+
+    public Ikan() {
+        this("1", "koi", 10);
+    }
+
+    // Setter
+    public void setIdIkan(String idIkan){
+        this.idIkan = idIkan;
+    }
+
+    public void setNamaIkan(String namaIkan){
+        this.namaIkan = namaIkan;
+    }
+
+    public void setJumlahIkan(int jumlahIkan){
+        this.jumlahIkan = jumlahIkan;
+    }
+
+    // Getter
+    public String getIdIkan() {
+        return idIkan;
+    }
+
+    public String getNamaIkan() {
+        return namaIkan;
+    }
+
+    public int getJumlahIkan(){
+        return jumlahIkan;
+    }
+
+    // Method sederhana
+    public void dataIkan() {
+        System.out.printf("ID Ikan             : %s%n", idIkan);
+        System.out.printf("Nama Ikan           : %s%n", namaIkan);
+        System.out.printf("Jumlah Ikan         : %d ekor%n", jumlahIkan);
+    }
+}
